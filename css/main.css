@@ -1,0 +1,46 @@
+body {
+  background-color: #141418;
+  color: #e2e2e6;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141418;
+}
+::-webkit-scrollbar-thumb {
+  background: #383845;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c1d24;
+}
+
+.glass-panel {
+  background: rgba(30, 30, 36, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.burgundy-glow {
+  box-shadow: 0 0 25px -5px rgba(122, 40, 49, 0.3);
+}
+
+.slot-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slot-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: #7a2831;
+  background-color: #282832;
+}
+
+.slot-btn.selected {
+  border-color: #9e323e;
+  background-color: #3d1b22;
+  box-shadow: 0 0 15px rgba(158, 50, 62, 0.4);
+}
